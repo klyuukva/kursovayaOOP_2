@@ -5,24 +5,25 @@ public class CargoShip {
     private TypeOfCargo type;
     private int teu; //twenty-foot equivalent unit
 
-   public enum TypeOfCargo {
+    public enum TypeOfCargo {
         LOOSE(50), //0
         LIQUID(70), //1
         CONTAINER(100); //2
 
         private int speed;
-       TypeOfCargo(int speed) {
-           this.speed = speed;
-       }
 
-       public int getSpeed() {
-           return speed;
-       }
+        TypeOfCargo(int speed) {
+            this.speed = speed;
+        }
 
-       public void setSpeed(int speed) {
-           this.speed = speed;
-       }
-   }
+        public int getSpeed() {
+            return speed;
+        }
+
+        public void setSpeed(int speed) {
+            this.speed = speed;
+        }
+    }
 
     public CargoShip(String name, TypeOfCargo type, int teu) {
         this.name = name;
@@ -50,7 +51,7 @@ public class CargoShip {
         return type;
     }
 
-    public int getTeu(){
+    public int getTeu() {
         return teu;
     }
 

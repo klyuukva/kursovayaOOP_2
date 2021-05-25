@@ -10,8 +10,7 @@ public class TimeCargoShip {
     private ArrivalTime arrivalTime;
     private DepartureTime departureTime;
 
-    public TimeCargoShip(CargoShip cargoShip)
-    {
+    public TimeCargoShip(CargoShip cargoShip) {
         arrivalTime = new ArrivalTime();
         departureTime = new DepartureTime(cargoShip);
     }
